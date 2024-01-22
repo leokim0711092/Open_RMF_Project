@@ -1,0 +1,17 @@
+{
+    "dispensers":{},
+    "robots":{        
+        "barista":{
+            "icons":{
+                "BaristaRobot":"/icons/BaristaRobot.png"
+            }
+        }
+    },
+    "logos":{
+        "headerLogo":{
+            "icons":{
+                "headerLogo":"/icons/headerLogo.png"
+            }
+        }
+    }
+}

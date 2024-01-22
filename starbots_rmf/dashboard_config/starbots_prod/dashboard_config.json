@@ -1,0 +1,19 @@
+{
+  "world_name": "Ramem Shop",
+  "valid_task": [
+    "Loop"
+  ],
+  "task": {
+    "Delivery": {},
+    "Loop": {
+      "places": [
+        "barista_1_charger",
+        "barista_2_charger"
+      ]
+    },
+    "Clean": {},
+    "Station": {},
+    "Patrol": {},
+    "Charging": {}
+  }
+}
