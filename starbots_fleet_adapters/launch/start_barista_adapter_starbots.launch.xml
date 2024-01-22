@@ -1,0 +1,15 @@
+<?xml version='1.0' ?>
+<launch>
+
+     <arg name="rmf_map_name" default="starbots_prod" description="RMF map name"/>
+    <arg name="config_file_box_bot" default="$(find-pkg-share starbots_fleet_adapters)/config/barista_starbots_config.yaml" description="Config for the Baristas in Starbots Space"/>
+    <arg name="nav_graph_box_bot" default="$(find-pkg-share starbots_rmf)/maps/$(var rmf_map_name)/nav_graphs/0.yaml" description="Graf for the Starbots Space graph 0"/>
+
+    <!-- Barista Adapter systems-->
+    <node pkg="starbots_fleet_adapters" exec="robot_api_server_barista"  output="screen">
+    </node>
+
+    <node pkg="starbots_fleet_adapters" exec="fleet_adapter"  output="screen" args="-c $(var config_file_box_bot) -n $(var nav_graph_box_bot) --use_sim_time">
+    </node>
+
+</launch>

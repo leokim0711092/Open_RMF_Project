@@ -7,8 +7,14 @@
     "Delivery": {},
     "Loop": {
       "places": [
-        "barista_1_charger",
-        "barista_2_charger"
+        "morty_charging_station",
+        "rick_charging_station",
+        "table_1_1",
+        "table_1_2",
+        "table_1_3",
+        "table_1_4",
+        "table_1_5",
+        "table_1_6"
       ]
     },
     "Clean": {},
