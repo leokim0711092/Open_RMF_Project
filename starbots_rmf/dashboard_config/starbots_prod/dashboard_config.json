@@ -1,10 +1,20 @@
 {
   "world_name": "Ramem Shop",
   "valid_task": [
-    "Loop"
+    "Loop",
+    "Delivery"
   ],
   "task": {
-    "Delivery": {},
+    "Delivery": {
+      "option": {
+              "portable_cup_2": {
+                "pickup_place_name": "coffee_bar",
+                "pickup_dispenser": "starbots_bartender_dispenser",
+                "dropoff_place_name": "table_1_1",
+                "dropoff_ingestor": "starbots_table_ingestor"
+              }
+            }
+    },
     "Loop": {
       "places": [
         "morty_charging_station",
@@ -14,7 +24,12 @@
         "table_1_3",
         "table_1_4",
         "table_1_5",
-        "table_1_6"
+        "table_1_6",
+        "table_2_1",
+        "table_2_2",
+        "table_3_1",
+        "table_4_1",
+        "coffee_bar"
       ]
     },
     "Clean": {},
