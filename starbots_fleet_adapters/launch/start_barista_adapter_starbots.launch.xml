@@ -9,7 +9,7 @@
     <node pkg="starbots_fleet_adapters" exec="robot_api_server_barista"  output="screen">
     </node>
 
-    <node pkg="starbots_fleet_adapters" exec="fleet_adapter"  output="screen" args="-c $(var config_file_box_bot) -n $(var nav_graph_box_bot) --use_sim_time">
+    <node pkg="starbots_fleet_adapters" exec="fleet_adapter"  output="screen" args="-c $(var config_file_box_bot) -n $(var nav_graph_box_bot) ">
     </node>
 
 </launch>
