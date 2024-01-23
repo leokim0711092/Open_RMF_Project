@@ -5,6 +5,9 @@
     b. 3 robots:
         source ~/rosject_systems_ws/install/setup.bash
         ros2 launch the_construct_office_gazebo launch_2_baristas_1_turtleE_nav2_batt.launch.xml
+    c. 2 robots with arm:
+        source ~/rosject_systems_ws/install/setup.bash
+        ros2 launch the_construct_office_gazebo 2_baristas_and_robot_arm.launch.xml
 
 2. Test Navigation
     source ~/rosject_systems_ws/install/setup.bash
@@ -42,3 +45,7 @@
 
 7. Fire
     firefox https://open-rmf.github.io/rmf-panel-js/
+
+8. Ingestor:
+    source ~/rosject_systems_ws/install/setup.bash
+    ros2 launch starbots_workcell start_arm_dispenser_manual_ingestor.launch.xml
