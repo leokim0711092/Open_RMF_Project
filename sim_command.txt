@@ -1,0 +1,33 @@
+1. Gazebo
+    a. 2 robots:
+        source ~/rosject_systems_ws/install/setup.bash
+        ros2 launch the_construct_office_gazebo launch_2_baristas_nav2_batt.launch.xml
+    b. 3 robots:
+        source ~/rosject_systems_ws/install/setup.bash
+        ros2 launch the_construct_office_gazebo launch_2_baristas_1_turtleE_nav2_batt.launch.xml
+
+2. Test Navigation
+    source ~/rosject_systems_ws/install/setup.bash
+    ros2 launch main_navigation start_navigation_rviz_starbots.launch.xml
+
+3. Laucn the common 
+    cd ~/ros2_ws
+    colcon build
+    source install/setup.bash
+    ros2 launch starbots_rmf rmf_only_common_starbots.launch.xml
+
+4. Nav for B1 
+    source /home/user/rosject_systems_ws/install/setup.bash
+    ros2 launch rmf_to_nav start_rmf_to_nav_v2.launch.xml barista_name:=barista_1
+
+5. Nav for B2
+    source /home/user/rosject_systems_ws/install/setup.bash
+    ros2 launch rmf_to_nav start_rmf_to_nav_v2.launch.xml barista_name:=barista_2
+
+6. Adapter
+    cd ~/ros2_ws
+    colcon build --packages-select starbots_fleet_adapters && source install/setup.bash
+    ros2 launch starbots_fleet_adapters start_barista_adapter_starbots.launch.xml
+
+7. Fire
+    firefox https://open-rmf.github.io/rmf-panel-js/
