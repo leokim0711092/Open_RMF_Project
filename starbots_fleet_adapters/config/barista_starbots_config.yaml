@@ -50,7 +50,7 @@ robots:
       start:
         map_name: "L1"
         waypoint: "rick_charging_station" # Optional
-        orientation: null
+        orientation: 0.0
       charger:
         waypoint: "rick_charging_station"
   # Configuration for the second robot in this fleet if there is a second robot
@@ -63,7 +63,7 @@ robots:
       start:
         map_name: "L1"
         waypoint: "morty_charging_station" # Optional
-        orientation: null
+        orientation: 0.0
       charger:
         waypoint: "morty_charging_station"
 

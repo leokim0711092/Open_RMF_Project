@@ -1,0 +1,13 @@
+<launch>
+
+
+    <include file="$(find-pkg-share starbots_workcell)/launch/start_gui.launch.xml"/>
+
+    <node   pkg="starbots_workcell" 
+            exec="robot_arm_panda_dispenser.py" 
+            name="robot_arm_dispenser">
+    </node>
+
+    <include file="$(find-pkg-share starbots_workcell)/launch/start_manual_ingestor.launch.xml"/>
+
+</launch>

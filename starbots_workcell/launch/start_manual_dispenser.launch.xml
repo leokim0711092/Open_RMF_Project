@@ -1,0 +1,8 @@
+<launch>
+
+    <node   pkg="starbots_workcell" 
+            exec="manual_dispenser_v2.py" 
+            name="manual_dispenser_v2_node">
+    </node>
+
+</launch>

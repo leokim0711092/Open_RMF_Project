@@ -1,0 +1,8 @@
+<launch>
+
+    <node   pkg="starbots_workcell" 
+            exec="manual_ingestor_v2.py" 
+            name="manual_ingestor_v2_node">
+    </node>
+
+</launch>

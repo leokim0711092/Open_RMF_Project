@@ -14,7 +14,13 @@
     cd ~/ros2_ws
     colcon build
     source install/setup.bash
-    ros2 launch starbots_rmf rmf_only_common_starbots.launch.xml
+    ros2 launch starbots_rmf rmf_only_common.launch.xml
+
+    //For launching the Delivery map_name
+
+    cd ~/ros2_ws
+    colcon build && source install/setup.bash
+    ros2 launch starbots_rmf rmf_only_common.launch.xml map_name:=starbots_prod
 
 4. Nav for B1 
     source /home/user/rosject_systems_ws/install/setup.bash
@@ -28,6 +34,11 @@
     cd ~/ros2_ws
     colcon build --packages-select starbots_fleet_adapters && source install/setup.bash
     ros2 launch starbots_fleet_adapters start_barista_adapter_starbots.launch.xml
+
+    //With map name parameter
+    cd ~/ros2_ws
+    colcon build --packages-select starbots_fleet_adapters && source install/setup.bash
+    ros2 launch starbots_fleet_adapters start_barista_adapter_starbots.launch.xml rmf_map_name:=starbots_prod
 
 7. Fire
     firefox https://open-rmf.github.io/rmf-panel-js/

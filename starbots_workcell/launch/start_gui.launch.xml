@@ -1,0 +1,8 @@
+<launch>
+
+    <node   pkg="starbots_workcell" 
+            exec="ros2_human_interface.py" 
+            name="ros2_human_interface_node">
+    </node>
+
+</launch>

@@ -7,11 +7,37 @@
   "task": {
     "Delivery": {
       "option": {
-              "portable_cup_2": {
+              "rodrigos_coffee": {
                 "pickup_place_name": "coffee_bar",
-                "pickup_dispenser": "starbots_bartender_dispenser",
+                "pickup_dispenser": "manual_dispenser_0",
                 "dropoff_place_name": "table_1_1",
-                "dropoff_ingestor": "starbots_table_ingestor"
+                "dropoff_ingestor": "manual_ingestor_0"
+              },
+
+              "miguels_coffee": {
+                "pickup_place_name": "coffee_bar",
+                "pickup_dispenser": "manual_dispenser_0",
+                "dropoff_place_name": "table_1_2",
+                "dropoff_ingestor": "manual_ingestor_0"
+              },
+
+              "bayodes_coffee": {
+                "pickup_place_name": "coffee_bar",
+                "pickup_dispenser": "manual_dispenser_0",
+                "dropoff_place_name": "table_2_1",
+                "dropoff_ingestor": "manual_ingestor_0"
+              },
+              "yuhongs_coffee": {
+                "pickup_place_name": "coffee_bar",
+                "pickup_dispenser": "manual_dispenser_0",
+                "dropoff_place_name": "table_2_2",
+                "dropoff_ingestor": "manual_ingestor_0"
+              },
+              "ricardos_coffee": {
+                "pickup_place_name": "coffee_bar",
+                "pickup_dispenser": "manual_dispenser_0",
+                "dropoff_place_name": "table_3_1",
+                "dropoff_ingestor": "manual_ingestor_0"
               }
             }
     },

@@ -1,0 +1,6 @@
+<launch>
+
+   <include file="$(find-pkg-share starbots_workcell)/launch/start_gui.launch.xml"/>
+   <include file="$(find-pkg-share starbots_workcell)/launch/start_manual_dispenser.launch.xml"/>
+
+</launch>
