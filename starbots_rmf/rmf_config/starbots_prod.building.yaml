@@ -17,7 +17,7 @@ graphs:
 levels:
   L1:
     doors:
-      - [33, 34, {motion_axis: [1, start], motion_degrees: [3, 90], motion_direction: [2, -1], name: [1, door_warehouse], plugin: [1, normal], right_left_ratio: [3, 1], type: [1, hinged]}]
+      - [33, 34, {motion_axis: [1, start], motion_degrees: [3, 90], motion_direction: [2, -1], name: [1, door_warehouse1], plugin: [1, normal], right_left_ratio: [3, 1], type: [1, hinged]}]
     drawing:
       filename: starbots_prod.png
     elevation: 0
@@ -55,6 +55,9 @@ levels:
       - [35, 29, {bidirectional: [4, true], demo_mock_floor_name: [1, ""], demo_mock_lift_name: [1, ""], graph_idx: [2, 1], orientation: [1, ""], speed_limit: [3, 0]}]
       - [4, 8, {bidirectional: [4, true], demo_mock_floor_name: [1, ""], demo_mock_lift_name: [1, ""], graph_idx: [2, 0], orientation: [1, ""], speed_limit: [3, 0]}]
       - [21, 36, {bidirectional: [4, true], demo_mock_floor_name: [1, ""], demo_mock_lift_name: [1, ""], graph_idx: [2, 0], orientation: [1, ""], speed_limit: [3, 0]}]
+      - [37, 28, {bidirectional: [4, true], demo_mock_floor_name: [1, ""], demo_mock_lift_name: [1, ""], graph_idx: [2, 0], orientation: [1, ""], speed_limit: [3, 0]}]
+      - [37, 38, {bidirectional: [4, true], demo_mock_floor_name: [1, ""], demo_mock_lift_name: [1, ""], graph_idx: [2, 0], orientation: [1, ""], speed_limit: [3, 0]}]
+      - [28, 24, {bidirectional: [4, true], demo_mock_floor_name: [1, ""], demo_mock_lift_name: [1, ""], graph_idx: [2, 0], orientation: [1, ""], speed_limit: [3, 0]}]
     layers:
       {}
     measurements:
@@ -97,5 +100,7 @@ levels:
       - [53.023000000000003, 83.396000000000001, 0, ""]
       - [81.712999999999994, 72.108999999999995, 0, ""]
       - [72.656000000000006, 69.954999999999998, 0, table_1_3]
+      - [17.192, 94.447000000000003, 0, warehouse1]
+      - [20.074999999999999, 73.474999999999994, 0, table_place]
 lifts: {}
 name: starbots_prod
