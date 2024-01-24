@@ -64,7 +64,10 @@
         "table_4_1",
         "coffee_bar",
         "warehouse1",
-        "table_place"
+        "table_place",
+        "turtlebot_5_charging_station",
+        "trash",
+        "turtlebot_5_storage"
       ]
     },
     "Clean": {},
