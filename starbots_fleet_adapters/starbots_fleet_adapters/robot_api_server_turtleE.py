@@ -369,8 +369,8 @@ def main(argv=None):
     # Init rclpy and adapter
     rclpy.init(args=argv)
 
-    fleet_name = "turtlebot_5"
-    robots_in_fleet_list = ["turtlebot_5"]
+    fleet_name = "turtlebotE"
+    robots_in_fleet_list = ["turtlebotE_1"]
     linear_vel = 0.5
     angular_vel = 0.6
 

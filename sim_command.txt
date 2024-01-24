@@ -41,6 +41,9 @@
     source /home/user/rosject_systems_ws/install/setup.bash
     ros2 launch rmf_to_nav start_rmf_to_nav_v2.launch.xml fleet_name:=turtlebot_5 barista_name:=turtlebot_5
 
+    source /home/user/rosject_systems_ws/install/setup.bash
+    ros2 launch rmf_to_nav start_rmf_to_nav_v2.launch.xml fleet_name:=turtlebotE barista_name:=turtlebotE_1
+
 6. Adapter
     cd ~/ros2_ws
     colcon build --packages-select starbots_fleet_adapters && source install/setup.bash
