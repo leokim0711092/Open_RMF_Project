@@ -369,8 +369,8 @@ def main(argv=None):
     # Init rclpy and adapter
     rclpy.init(args=argv)
 
-    fleet_name = "barista"
-    robots_in_fleet_list = ["barista_1","barista_2"]
+    fleet_name = "turtlebot_5"
+    robots_in_fleet_list = ["turtlebot_5"]
     linear_vel = 0.5
     angular_vel = 0.6
 
@@ -383,7 +383,7 @@ def main(argv=None):
 
     uvicorn.run(app,
                 host='127.0.0.1',
-                port='8001',
+                port='8000',
                 log_level='warning')
 
 

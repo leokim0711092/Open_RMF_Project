@@ -13,6 +13,10 @@
     source ~/rosject_systems_ws/install/setup.bash
     ros2 launch main_navigation start_navigation_rviz_starbots.launch.xml
 
+    // Turtle included
+    source ~/rosject_systems_ws/install/setup.bash
+    ros2 launch main_navigation start_navigation_rviz_starbots_three.launch.xml
+
 3. Laucn the common 
     cd ~/ros2_ws
     colcon build
@@ -33,6 +37,10 @@
     source /home/user/rosject_systems_ws/install/setup.bash
     ros2 launch rmf_to_nav start_rmf_to_nav_v2.launch.xml barista_name:=barista_2
 
+6. Nav for turtleE
+    source /home/user/rosject_systems_ws/install/setup.bash
+    ros2 launch rmf_to_nav start_rmf_to_nav_v2.launch.xml fleet_name:=turtlebot_5 barista_name:=turtlebot_5
+
 6. Adapter
     cd ~/ros2_ws
     colcon build --packages-select starbots_fleet_adapters && source install/setup.bash
@@ -42,6 +50,11 @@
     cd ~/ros2_ws
     colcon build --packages-select starbots_fleet_adapters && source install/setup.bash
     ros2 launch starbots_fleet_adapters start_barista_adapter_starbots.launch.xml rmf_map_name:=starbots_prod
+
+7. Turle Adapter
+    cd ~/ros2_ws
+    colcon build --packages-select starbots_fleet_adapters && source install/setup.bash
+    ros2 launch starbots_fleet_adapters start_turtleE_adapter_starbots.launch.xml rmf_map_name:=starbots_prod
 
 7. Fire
     firefox https://open-rmf.github.io/rmf-panel-js/

@@ -27,7 +27,9 @@ setup(
     entry_points={
         'console_scripts': [
             'fleet_adapter=starbots_fleet_adapters.fleet_adapter:main',
-            'robot_api_server_barista=starbots_fleet_adapters.robot_api_server_barista:main'
+            'robot_api_server_barista=starbots_fleet_adapters.robot_api_server_barista:main',
+            'robot_api_server_turtleE=starbots_fleet_adapters.robot_api_server_turtleE:main'
+
         ],
     },
 )
